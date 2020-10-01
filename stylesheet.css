@@ -1,0 +1,733 @@
+@media all and (max-width: 1024px)
+{ 
+    #bloc_page
+    {
+        /*width: auto;*/
+       
+        
+    }
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /*padding: 0;*/
+    border: 0;
+    font-size: 100%;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+
+}
+
+
+/*---menu/nav---*/
+
+nav
+{
+    position: relative;
+    margin: 25px auto 0;
+    padding-top: 30px;
+    margin-right: 5px;       /*5px*/
+    padding-right: 50px;     /*50px*/
+    width: 500px;        /*350px*/
+    height: 50px;        /*50px*/
+    background: white;
+    /*border-radius: 8px;*/
+    font-size: 0;
+    /*box-shadow: 0 2px 3px 0 rgba (0, 0, 0, .1);*/
+    text-align: center;
+
+}
+
+nav a
+{
+    font-size: 15px;
+    color: #0065FC;
+    text-decoration: none;
+    font-family: 'Raleway-ExtraBold', sans-serif;
+    line-height: 50px;  /*50px*/
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+/*---animation navigation--- */
+
+
+nav .animation
+{
+    position: absolute;
+    height: 2px;
+    top: 0px;
+    z-index: 0;
+    background: #0065FC;
+    width: 150px;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+
+
+a:nth-child(1)
+{
+    width: 100px;
+}
+    
+nav .start-hebergements, a:nth-child(1):hover~.animation
+{
+    width: 110px;
+    left:20px;
+    
+
+}
+
+
+a:nth-child(2)
+{
+    width: 110px;
+}
+
+nav .start-activites, a:nth-child(2):hover~.animation
+{
+    width: 110px;
+    left: 155px;
+    
+}
+
+a:nth-child(3)
+{
+    width: 110px;
+    
+}
+
+nav .start-inscrire, a:nth-child(3):hover~.animation
+{
+    width: 100px;
+    left: 270px;
+    
+}
+
+
+/*---logo Reservia---*/
+
+#logo
+{
+    position: relative;
+    padding-top: 90px;
+    padding-left: 25px;
+
+}
+
+
+#search-location
+{
+
+
+}
+
+
+/*---introduction---*/
+
+h2
+{
+    padding-left: 25px;
+}
+
+.nmbre_log_dispo
+{
+    line-height: 0.2em;
+    padding-left: 25px;
+}
+
+.ville_ou_nature
+{
+    margin-left: 25px;
+}
+
+
+/*---barre recherche---*/
+
+#barre_recherche
+{
+    padding-left: 25px;
+}
+
+
+
+::placeholder
+{
+    font-size: 1.2em;
+    
+}
+
+.search
+{
+    background-color: white;
+    border-style: none;
+    outline-style: none;
+    border-radius: 15%;
+    margin-top: 30px;
+}
+
+
+.rechercher
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 13px;
+    background-color: #0065FC;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.0em;
+    color: white;
+    border-style: none;
+    outline-style: none;
+    border-radius: 0% 7% 7% 0%;
+
+}
+
+.filtres
+{
+    padding-left: 25px;
+    padding-top: 15px;
+    
+}
+
+.nmbre_log_dispo
+{
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+/*---icone locate-icone---*/
+
+.fa-map-marker-alt
+{
+    color: black;
+    background: #F2F2F2;
+    padding:10px;
+    border-radius: 35% 0% 0% 35%;
+}
+
+
+
+/*---icones économique/familial/romantique/animaux autorisés/info---*/
+
+
+.fa-money-bill-wave
+{
+    color: #0065FC;
+    background: #DEEBFF;
+    padding:3px;
+    border-radius: 50%;
+    
+}
+
+.fa-child
+{
+    color: #0065FC;
+    background: #DEEBFF;
+    padding:3px;
+    border-radius: 50%;
+}
+
+.fa-heart
+{
+    color: #0065FC;
+    background: #DEEBFF;
+    padding:3px;
+    border-radius: 50%;
+}
+
+.fa-dog
+{
+    color: #0065FC;
+    background: #DEEBFF;
+    padding:3px;
+    border-radius: 50%;
+}
+
+.fa-info-circle
+{
+    color: #0065FC;
+    padding:3px;
+    border-radius: 50%;
+}
+
+/*---container flexbox HEBERGEMENTS ci-dessous---*/
+
+
+.holdingcontainer
+{
+    width: 100%;
+    padding: 10px;  /*50px*/
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+
+
+}
+
+
+
+.internalcontainerL
+{
+    flex: 1;
+    background: lightgrey;
+    padding: 30px;  /*30px*/
+    font-size: 12px;
+    margin:30px;
+   
+    
+}
+
+.container1
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+
+
+.internalcontainerR
+{
+    flex: 1;
+    background: lightcoral;
+    padding: 33px; /*30px*/
+    font-size: 12px;
+    margin:10px;
+    
+   
+}
+
+
+@media screen and (max-width: 600px) 
+{
+   .holdingcontainer{
+       flex-direction: column;
+   }
+}
+
+.nested1 .cannebiere
+{
+    width: 200px;       /*width: 180px; height: 160px; display: flex;*/
+    height: 150px;
+    display: flex;
+    /*margin-bottom: 6px;*/
+    margin-right: 20px;
+
+        
+}
+
+
+.fond_blanc
+{
+    display:inline-block;
+    height:60px;
+    background-color: white;
+    padding-right: 74px;
+    padding-top: 4px;
+}
+
+
+/*
+.fond_blanc
+{
+    background: white;
+    
+}
+*/
+.nested2 .port
+{
+    width: 200px;
+    height: 150px;
+    margin-right: 20px;
+    
+    
+    
+   
+   
+    
+}
+
+.nested3 .mouettes
+{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    margin-right: 20px;
+    
+  
+    
+    
+}
+
+.nested4 .mer
+{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    margin-top: 15px;
+    margin-right: 20px;
+    
+    
+    
+}
+
+.nested5 .panier
+{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    margin-top: 15px;
+    margin-right: 20px;
+   
+   
+    
+    
+}
+
+.nested6 .amina
+{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    margin-top: 15px;
+    margin-right: 20px;
+  
+    
+    
+}
+
+.étoilesL
+{
+    line-height: 2em;
+}
+
+.descriptionL
+{
+    line-height: 1.5em;
+}
+/*
+.cadreL
+{
+    border: white solid 4px;
+    border-radius: 5%;
+}
+*/
+
+
+
+
+/*les plus populaires*/
+
+.nested1 .soleil
+{
+    width: 160px;
+    height: 120px;
+    display: flex;
+
+    
+}
+
+/*pour aligner texte et image ci dessous*/
+
+.alignement_img_texte
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descriptionR
+{
+    text-align: left;
+    padding-right: 330px;
+    padding-top: 25px;
+
+}
+/*problème avec méthode ci-dessus car ce que j'ai mis s'applique au premier item mais pas au deuxième*/
+/*fin*/
+
+
+
+
+.nested2 .coeur_eau
+{
+    width: 160px;
+    height: 120px;
+    display: flex;
+
+}
+
+
+
+.nested3 .bleu_blanc
+{
+    width: 160px;
+    height: 120px;
+    display: flex;
+   
+}
+
+
+
+.descriptionL
+{
+    margin-top: 0px;
+    
+}
+
+
+
+.étoilesL
+{
+    margin-bottom: 15px;
+}
+
+.étoilesR
+{
+    margin-bottom: 15px;
+    
+}
+
+
+.blue-stars > i
+{
+    size: 2px;
+    color: #0065FC;
+}
+
+.grey-star > i
+{
+    size: 2px;
+    color: #DEEBFF;
+}
+
+
+
+/*
+.descriptionR
+{
+    float: right;
+}
+*/
+
+
+
+
+/*---container grid ACTIVITES ci-dessous*/
+
+#holding_container_grid
+{
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    margin-bottom: 50px;
+ 
+
+} 
+
+.wrapper_grid
+{
+    
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-column-gap: 1em;
+    min-width: 100%;
+    max-width: 100%;
+   
+}
+
+.wrapper_grid > div
+{
+   background: white;
+   padding-top: 1em;
+   padding-left: 1em;
+   padding-right: 1em;
+   padding-bottom: 3em;
+   
+
+
+}
+
+.wrapper_grid > div:nth-child(odd)
+{
+    background: white;
+}
+
+
+
+.port
+{
+    
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+   
+
+  
+      
+}
+
+.fort
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+   
+    
+}
+
+.frioul
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.parc_calanques
+{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.de_la_garde
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.photo-longchamp
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.description_fort
+{
+    
+    font-weight: bold;
+    text-align: left;
+    padding-left: 15px;
+    line-height: 2em;
+  
+}
+
+.description_garde
+{
+    
+    font-weight: bold;
+    text-align: left;
+    padding-left: 15px;
+    line-height: 2em;
+    
+}
+
+.description_port
+{
+    font-weight: bold;
+    text-align: left;
+    padding-left: 15px;
+    line-height: 2em;
+    
+}
+
+
+
+.description_iles
+{
+    font-weight: bold;
+    text-align: left;
+    padding-left: 15px;
+    line-height: 2em;
+}
+
+
+
+.description_calanques
+{
+    font-weight: bold;
+    text-align: left;
+    padding-left: 15px;
+    line-height: 2em;
+    
+}
+
+
+.description_longchamp
+{
+
+    font-weight: bold;
+    text-align: left;
+    padding-left: 15px;
+    line-height: 2em;
+}
+
+.cadre
+{
+    border: white solid 2px;
+    border-radius: 7%;
+    overflow: hidden;
+    box-shadow: lavender  5px 5px;
+}
+
+@media screen and (max-width: 600px) 
+{
+
+    .wrapper_grid
+    {
+           
+    }
+       
+   
+}
+
+
+
+
+/*--FOOTER--*/
+
+
+.footer
+{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    /*box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between; */
+
+}
+
+.inner_footer
+{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.inner_footer .tiers
+{
+    display: block;
+    padding: 15px;
+    width: 33.3%;
+}
+
+@media screen and (max-width: 600px) 
+{
+   .inner_footer
+   {
+       flex-direction: column;
+   }
+   
+}
