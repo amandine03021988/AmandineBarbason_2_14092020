@@ -1,0 +1,753 @@
+@media all and (max-device-width: 480px)
+{ 
+    #bloc_page
+    {
+        width: auto;
+       
+        
+    }
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /*padding: 0;*/
+    border: 0;
+    font-size: 100%;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+
+}
+
+
+/*---menu/nav---*/
+
+#menu-navigation
+{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+
+nav 
+{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-bottom: 45px;
+  
+}
+
+#heberg, #activ, #inscription
+{
+  padding: 25px;
+  font-family: 'Raleway-ExtraBold', sans-serif;
+  
+  
+}
+
+nav a 
+{
+  text-decoration: none;
+  color: #0065FC;
+  
+}
+
+nav a:hover
+{
+  border-top: 1.5px solid #0065FC;
+  padding-top:45px;
+  font-weight: bold;
+}
+
+
+
+
+/*---logo Reservia---*/
+
+#logo
+{
+    position: relative;
+    padding-top: 5px;
+    padding-left: 25px;
+
+}
+
+
+#search-location
+{
+    padding-top: 35px;
+
+}
+
+
+/*---introduction---*/
+
+h2
+{
+    padding-left: 25px;
+}
+
+@media screen and (max-width: 480px) 
+{
+    #search-location h2 .ville_ou_nature
+    {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       
+    }
+
+}
+
+
+.nmbre_log_dispo
+{
+    line-height: 0.2em;
+    padding-left: 25px;
+}
+
+@media screen and (max-width: 480px)
+{
+    div.nmbre_log_dispo
+    {
+       display: inline-block;
+       padding-top: 10px;
+       line-height: 1em;
+       padding-left: 5px;
+       font-size: smaller;
+    }
+    
+}
+
+.ville_ou_nature
+{
+    margin-left: 25px;
+    padding-top: 10px;
+}
+
+
+/*---barre recherche---*/
+
+#barre_recherche
+{
+    padding-left: 25px;
+}
+
+
+
+::placeholder
+{
+    font-size: 1.2em;
+    
+}
+
+.search
+{
+    background-color: white;
+    border-style: none;
+    outline-style: none;
+    border-radius: 15%;
+    margin-top: 30px;
+}
+
+
+.rechercher
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 13px;
+    background-color: #0065FC;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.0em;
+    color: white;
+    border-style: none;
+    outline-style: none;
+    border-radius: 0% 7% 7% 0%;
+
+}
+
+@media screen and (max-width: 480px) 
+{
+    div#barre_recherche
+    {
+       
+       max-width: 392px;
+       min-height: 59px;
+    }
+
+}
+
+
+.filtres
+{
+    padding-left: 8px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+@media screen and (max-width: 480px) 
+{
+    .filtres
+    {
+       flex-direction: column;
+       flex-wrap: nowrap;
+       
+    }
+    div.bordure-filtres
+    {
+       min-width: 204px;
+       min-height: 44px;
+    }
+    .filtres p
+    {
+        padding-bottom: 10px;
+    }
+}
+
+
+.filtres > i
+{
+    margin: 20px;
+}
+
+.filtres p
+{
+    margin-right: 35px;
+       
+}
+
+.texte-filtres
+{
+    margin-right: 10px;
+}
+
+.bordure-filtres
+{
+    margin-right: 35px;
+    border: #DEEBFF solid 1px;
+    border-radius: 25px;
+}
+
+.nmbre_log_dispo
+{
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+/*---icone locate-icone---*/
+
+.fa-map-marker-alt
+{
+    color: black;
+    background: #F2F2F2;
+    padding:10px;
+    border-radius: 35% 0% 0% 35%;
+}
+
+
+
+/*---icones économique/familial/romantique/animaux autorisés/info---*/
+
+
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
+{
+    color: #0065FC;
+    background: #DEEBFF;
+    padding:13px;
+    margin-right: 10px;
+    border-radius: 50%;
+
+    
+}
+
+@media screen and (max-width: 480px) 
+{
+    .fa-child
+    {
+       padding: 15px;
+       margin-right: 13px;
+    }
+    .fa-heart
+    {
+       margin-right: 13px;
+    }
+}
+
+
+.fa-money-bill-wave:hover
+{
+    background: #0065FC;
+    color: white;
+}
+
+.fa-child:hover
+{
+    background: #0065FC;
+    color: white;
+}
+
+.fa-heart:hover
+{
+    background: #0065FC;
+    color: white;
+}
+
+.fa-dog:hover
+{
+    background: #0065FC;
+    color: white;
+}
+
+
+
+
+/*
+.fas:hover
+{
+    background: #0065FC;
+    color: white;
+}*/
+
+
+.fa-info-circle
+{
+    color: #0065FC;
+    padding:3px;
+    padding-top: 25px;
+    border-radius: 50%;
+}
+
+/*--RATING--*/
+
+.blue-stars > i
+{
+    font-size: 12px;
+    color: #0065FC;
+}
+
+.grey-star > i
+{
+    font-size: 12px;
+    color: #DEEBFF;
+}
+
+
+/*---container flexbox HEBERGEMENTS ci-dessous---*/
+
+
+.holdingcontainer
+{
+    width: 100%;
+    padding-top: 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+
+
+}
+
+
+
+.internalcontainerL
+{
+    flex: 2;
+    background: #F2F2F2;
+    border-radius: 15px;
+    padding: 60px;  
+    font-size: 12px;
+    margin:15px;
+       
+}
+
+@media screen and (max-width: 480px) 
+{
+    .internalcontainerL
+    {
+        margin: 0;
+    }
+}
+
+
+
+.container1
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 480px) 
+{
+    div.container1
+    {
+       flex-direction: column;
+       
+    }
+    
+    div.nested1, .nested2, .nested3, .nested4, .nested5, .nested6
+    {
+        min-width: 100%;
+        min-height: 100%;
+        
+    }
+    
+
+}
+
+
+.internalcontainerR
+{
+    flex: 1;
+    background: #F2F2F2;
+    border-radius: 15px;
+    padding: 58px; 
+    font-size: 12px;
+    margin:15px;
+    
+   
+}
+
+@media screen and (max-width: 480px) 
+{
+    .internalcontainerR
+    {
+        margin: 0;
+    }
+}
+
+
+
+
+@media screen and (max-width: 480px) 
+{
+   .holdingcontainer{
+       flex-direction: column;
+   }
+}
+
+
+.internalcontainerL h1
+{
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.internalcontainerL p
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.internalcontainerL .nested1, .nested2, .nested3, .nested4, .nested5, .nested6
+{
+    margin-bottom: 30px;
+    padding: 15px;
+    width: 33.3%;
+    
+    
+    
+}
+
+
+.nested1 .cannebiere, .nested2 .port, .nested3 .mouettes, .nested4 .mer, .nested5 .panier, .nested6 .amina
+{   
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: flex;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  
+}
+
+
+.fond_blanc
+{
+    height:60px;
+    padding-left: 10px;
+    background-color: white;      
+}
+
+.cadre_nested
+{
+    border: white solid 5px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    box-shadow: lavender 2px 2px 2px 2px;
+}
+
+
+.étoilesL
+{
+   line-height: 2em;
+}
+
+.descriptions
+{
+    line-height: 1.5em;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+
+
+/*les plus populaires*/
+
+.container2
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding-top: 10px;
+}
+
+
+
+.container2 .niche1 .soleil, .niche2 .coeur_eau, .niche3 .bleu_blanc
+{
+    width: 33%;
+    height: 145px;
+    object-fit: cover;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    
+}
+
+figure
+{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+figcaption
+{
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+a
+{
+    text-decoration: none;
+}
+
+p.étoilesR
+{
+    padding-top: 70px;
+    padding-bottom: 13px;
+}
+
+
+h3, p
+{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+
+figure.niche1, .niche2, .niche3
+{
+    background: white;
+    border: white solid 4px;
+    border-radius: 10px;
+    box-shadow: lavender 2px 2px 2px 2px;
+    
+}
+
+figure.niche1
+{
+    margin-top: 25px;
+}
+
+.internalcontainerR h1
+{
+    font-size: 15px;
+    
+}
+
+
+
+
+
+
+
+/*---container grid ACTIVITES ci-dessous*/
+
+
+
+#holding_container_grid
+{
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 50px;
+ 
+
+} 
+
+.wrapper_grid
+{
+    
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    min-width: 100%;
+    max-width: 100%;
+   
+}
+
+.wrapper_grid > div
+{
+   background: white;
+   padding-top: 1em;
+   padding-left: 1em;
+   padding-right: 1em;
+   padding-bottom: 3em;
+
+}
+
+
+.port, .parc_calanques
+{
+    
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+       
+}
+
+
+.fort, .frioul, .de_la_garde, .photo-longchamp
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+
+
+.cadre3
+{
+    margin-top: 58px;
+}
+
+
+.cadre6
+{
+    margin-top: 58px;
+}
+
+.description_fort, .description_garde, .description_port, .description_iles, .description_calanques, .description_longchamp
+{
+    
+    font-weight: bold;
+    text-align: left;
+    padding-left: 15px;
+    line-height: 2em;
+  
+}
+
+
+
+.cadre1, .cadre2, .cadre3, .cadre4, .cadre5, .cadre6
+{
+    border: white solid 2px;
+    border-radius: 7%;
+    overflow: hidden;
+    box-shadow: lavender  5px 5px;
+}
+
+@media screen and (max-width: 480px) 
+{
+    
+    .wrapper_grid > div
+    {
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+    
+    
+    div.wrapper_grid
+    {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: auto;
+       
+    }
+
+}
+
+
+/*--FOOTER--*/
+
+
+#footer
+{
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.inner_footer
+{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between; 
+    padding-top: 50px;
+}
+
+.inner_footer .tiers
+{
+    display: block;
+    padding: 15px;
+    width: 33.3%;
+}
+
+.sous-catégorie
+{
+    line-height: 1.5em;
+}
+
+.tiers h1
+{
+    padding-bottom: 12px;
+}
+
+@media screen and (max-width: 480px) 
+{
+   div.inner_footer
+   {
+       flex-direction: column;
+       
+   }
+   div.tiers
+   {
+       min-width: 80%;
+   }
+   
+}
