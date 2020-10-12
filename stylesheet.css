@@ -50,7 +50,7 @@ nav a
     line-height: 50px;  /*50px*/
     position: relative;
     z-index: 1;
-    display: inline-block;
+    /*display: inline-block;*/
 }
 
 /*---animation navigation--- */
