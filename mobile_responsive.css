@@ -333,16 +333,6 @@ h2
 }
 
 
-
-
-/*
-.fas:hover
-{
-    background: #0065FC;
-    color: white;
-}*/
-
-
 .fa-info-circle
 {
     color: #0065FC;
@@ -407,7 +397,6 @@ h2
     .internalcontainerL
     {
         margin: 0;
-        /*width: 100%;*/
     }
 }
 
@@ -613,12 +602,6 @@ figure.niche1
     font-size: 15px;
     
 }
-
-
-
-
-
-
 
 /*---container grid ACTIVITES ci-dessous*/
 
