@@ -1,4 +1,4 @@
-@media all and (max-width: 480px)
+@media all and (max-width: 768px)
 { 
     #bloc_page
     {
@@ -29,8 +29,10 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    
 
 }
+
 
 nav 
 {
@@ -40,6 +42,16 @@ nav
   margin-bottom: 45px;
   
 }
+
+@media screen and (max-width: 768px) 
+{
+    nav
+    {
+       width: 100%;
+    }
+
+}
+
 
 #heberg, #activ, #inscription
 {
@@ -91,7 +103,7 @@ h2
     padding-left: 25px;
 }
 
-@media screen and (max-width: 480px) 
+@media screen and (max-width: 768px) 
 {
     #search-location h2 .ville_ou_nature
     {
@@ -110,7 +122,7 @@ h2
     padding-left: 25px;
 }
 
-@media screen and (max-width: 480px)
+@media screen and (max-width: 768px)
 {
     div.nmbre_log_dispo
     {
@@ -171,12 +183,12 @@ h2
 
 }
 
-@media screen and (max-width: 480px) 
+@media screen and (max-width: 768px) 
 {
     div#barre_recherche
     {
        
-       max-width: 392px;
+       min-width: 392px;
        min-height: 59px;
     }
 
@@ -193,12 +205,12 @@ h2
     
 }
 
-@media screen and (max-width: 480px) 
+@media screen and (max-width: 768px) 
 {
-    .filtres
+    div.filtres
     {
        flex-direction: column;
-       flex-wrap: nowrap;
+       flex-wrap: wrap;
        
     }
     div.bordure-filtres
@@ -218,6 +230,8 @@ h2
     margin: 20px;
 }
 
+
+
 .filtres p
 {
     margin-right: 35px;
@@ -234,6 +248,16 @@ h2
     margin-right: 35px;
     border: #DEEBFF solid 1px;
     border-radius: 25px;
+}
+
+@media screen and (max-width: 768px) 
+{
+    
+    div.bordure-filtres
+    {
+       margin-right: 10px;
+    }
+      
 }
 
 .nmbre_log_dispo
@@ -268,8 +292,9 @@ h2
     
 }
 
-@media screen and (max-width: 480px) 
+@media screen and (max-width: 768px) 
 {
+    
     .fa-child
     {
        padding: 15px;
@@ -279,6 +304,7 @@ h2
     {
        margin-right: 13px;
     }
+      
 }
 
 
@@ -356,6 +382,14 @@ h2
 }
 
 
+@media screen and (max-width: 768px) 
+{
+    div.holdingcontainer
+    {
+        flex-direction: column;
+    }
+}
+
 
 .internalcontainerL
 {
@@ -368,11 +402,12 @@ h2
        
 }
 
-@media screen and (max-width: 480px) 
+@media screen and (max-width: 768px) 
 {
     .internalcontainerL
     {
         margin: 0;
+        /*width: 100%;*/
     }
 }
 
@@ -387,7 +422,7 @@ h2
     padding-top: 15px;
 }
 
-@media screen and (max-width: 480px) 
+@media screen and (max-width: 768px) 
 {
     div.container1
     {
@@ -418,7 +453,7 @@ h2
    
 }
 
-@media screen and (max-width: 480px) 
+@media screen and (max-width: 768px) 
 {
     .internalcontainerR
     {
@@ -428,13 +463,6 @@ h2
 
 
 
-
-@media screen and (max-width: 480px) 
-{
-   .holdingcontainer{
-       flex-direction: column;
-   }
-}
 
 
 .internalcontainerL h1
@@ -475,7 +503,7 @@ h2
 .fond_blanc
 {
     width: 100%;
-    height:auto;
+    height: auto;
     padding-left: 10px;
     background-color: white;      
 }
@@ -678,7 +706,7 @@ figure.niche1
     box-shadow: lavender  5px 5px;
 }
 
-@media screen and (max-width: 480px) 
+@media screen and (max-width: 768px) 
 {
     
     .wrapper_grid > div
@@ -739,7 +767,7 @@ figure.niche1
     padding-bottom: 12px;
 }
 
-@media screen and (max-width: 480px) 
+@media screen and (max-width: 768px) 
 {
    div.inner_footer
    {
@@ -752,3 +780,6 @@ figure.niche1
    }
    
 }
+
+
+
