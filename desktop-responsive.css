@@ -236,15 +236,6 @@ h2
 
 
 
-
-/*
-.fas:hover
-{
-    background: #0065FC;
-    color: white;
-}*/
-
-
 .fa-info-circle
 {
     color: #0065FC;
@@ -479,12 +470,6 @@ figure.niche1
     
 }
 
-
-
-
-
-
-
 /*---container grid ACTIVITES ci-dessous*/
 
 
@@ -571,16 +556,6 @@ figure.niche1
     box-shadow: lavender  5px 5px;
 }
 
-@media screen and (max-width: 600px) 
-{
-
-    .wrapper_grid
-    {
-           
-    }
-       
-   
-}
 
 
 /*--FOOTER--*/
@@ -620,7 +595,7 @@ figure.niche1
     padding-bottom: 12px;
 }
 
-@media screen and (max-width: 600px) 
+@media (min-width:992px) and (max-width: 1606px) 
 {
    .inner_footer
    {
