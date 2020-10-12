@@ -2,7 +2,7 @@
 { 
     #bloc_page
     {
-        /*width: auto;*/
+        width: auto;
        
         
     }
@@ -24,87 +24,46 @@
 
 /*---menu/nav---*/
 
-nav
+#menu-navigation
 {
-    position: relative;
-    margin: 25px auto 0;
-    padding-top: 30px;
-    margin-right: 5px;       
-    padding-right: 50px;     
-    width: 500px;        
-    height: 50px;        
-    background: white;
-    font-size: 0;
-    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 
 }
 
-nav a
+nav 
 {
-    font-size: 15px;
-    color: #0065FC;
-    text-decoration: none;
-    font-family: 'Raleway-ExtraBold', sans-serif;
-    line-height: 50px;  
-    position: relative;
-    z-index: 1;
-    /*display: inline-block;*/
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-bottom: 45px;
+  
 }
 
-/*---animation navigation--- */
-
-
-nav .animation
+#heberg, #activ, #inscription
 {
-    position: absolute;
-    height: 2px;
-    top: 0px;
-    z-index: 0;
-    background: #0065FC;
-    width: 150px;
-    border-radius: 8px;
-    transition: all .5s ease 0s;
+  padding: 25px;
+  font-family: 'Raleway-ExtraBold', sans-serif;
+  
+  
 }
 
-
-a:nth-child(1)
+nav a 
 {
-    width: 100px;
+  text-decoration: none;
+  color: #0065FC;
+  
 }
-    
-nav .start-hebergements, a:nth-child(1):hover~.animation
-{
-    width: 110px;
-    left:20px;
-    
 
+nav a:hover
+{
+  border-top: 1.5px solid #0065FC;
+  padding-top:45px;
+  font-weight: bold;
 }
 
 
-a:nth-child(2)
-{
-    width: 110px;
-}
-
-nav .start-activites, a:nth-child(2):hover~.animation
-{
-    width: 110px;
-    left: 155px;
-    
-}
-
-a:nth-child(3)
-{
-    width: 110px;
-    
-}
-
-nav .start-inscrire, a:nth-child(3):hover~.animation
-{
-    width: 100px;
-    left: 270px;
-    
-}
 
 
 /*---logo Reservia---*/
@@ -112,7 +71,7 @@ nav .start-inscrire, a:nth-child(3):hover~.animation
 #logo
 {
     position: relative;
-    padding-top: 90px;
+    padding-top: 5px;
     padding-left: 25px;
 
 }
@@ -120,7 +79,7 @@ nav .start-inscrire, a:nth-child(3):hover~.animation
 
 #search-location
 {
-
+    padding-top: 35px;
 
 }
 
@@ -141,6 +100,7 @@ h2
 .ville_ou_nature
 {
     margin-left: 25px;
+    padding-top: 10px;
 }
 
 
@@ -187,9 +147,35 @@ h2
 
 .filtres
 {
-    padding-left: 25px;
-    padding-top: 15px;
+    padding-left: 8px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
     
+    
+}
+
+.filtres > i
+{
+    margin: 20px;
+}
+
+.filtres p
+{
+    margin-right: 35px;
+       
+}
+
+.texte-filtres
+{
+    margin-right: 10px;
+}
+
+.bordure-filtres
+{
+    margin-right: 35px;
+    border: #DEEBFF solid 1px;
+    border-radius: 25px;
 }
 
 .nmbre_log_dispo
@@ -213,45 +199,74 @@ h2
 /*---icones économique/familial/romantique/animaux autorisés/info---*/
 
 
-.fa-money-bill-wave
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
 {
     color: #0065FC;
     background: #DEEBFF;
-    padding:3px;
+    padding:10px;
+    margin-right: 10px;
     border-radius: 50%;
+
     
 }
 
-.fa-child
+.fa-money-bill-wave:hover
 {
-    color: #0065FC;
-    background: #DEEBFF;
-    padding:3px;
-    border-radius: 50%;
+    background: #0065FC;
+    color: white;
 }
 
-.fa-heart
+.fa-child:hover
 {
-    color: #0065FC;
-    background: #DEEBFF;
-    padding:3px;
-    border-radius: 50%;
+    background: #0065FC;
+    color: white;
 }
 
-.fa-dog
+.fa-heart:hover
 {
-    color: #0065FC;
-    background: #DEEBFF;
-    padding:3px;
-    border-radius: 50%;
+    background: #0065FC;
+    color: white;
 }
+
+.fa-dog:hover
+{
+    background: #0065FC;
+    color: white;
+}
+
+
+
+
+/*
+.fas:hover
+{
+    background: #0065FC;
+    color: white;
+}*/
+
 
 .fa-info-circle
 {
     color: #0065FC;
     padding:3px;
+    padding-top: 25px;
     border-radius: 50%;
 }
+
+/*--RATING--*/
+
+.blue-stars > i
+{
+    font-size: 12px;
+    color: #0065FC;
+}
+
+.grey-star > i
+{
+    font-size: 12px;
+    color: #DEEBFF;
+}
+
 
 /*---container flexbox HEBERGEMENTS ci-dessous---*/
 
@@ -259,7 +274,7 @@ h2
 .holdingcontainer
 {
     width: 100%;
-    padding: 10px;  /*50px*/
+    padding-top: 25px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -272,11 +287,14 @@ h2
 
 .internalcontainerL
 {
-    flex: 1;
-    background: lightgrey;
-    padding: 30px;  /*30px*/
+    flex: 2;
+    background: #F2F2F2;
+    border-radius: 15px;
+    padding: 60px;  
     font-size: 12px;
-    margin:30px;
+    margin:15px;
+   
+    
    
     
 }
@@ -287,6 +305,7 @@ h2
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between; 
+    padding-top: 15px;
 }
 
 
@@ -294,238 +313,190 @@ h2
 .internalcontainerR
 {
     flex: 1;
-    background: lightcoral;
-    padding: 33px; /*30px*/
+    background: #F2F2F2;
+    border-radius: 15px;
+    padding: 58px; 
     font-size: 12px;
-    margin:10px;
+    margin:15px;
     
    
 }
 
-
+/*
 @media screen and (max-width: 600px) 
 {
    .holdingcontainer{
        flex-direction: column;
    }
 }
-
-.nested1 .cannebiere
-{
-    width: 200px;       /*width: 180px; height: 160px; display: flex;*/
-    height: 150px;
-    display: flex;
-    /*margin-bottom: 6px;*/
-    margin-right: 20px;
-
-        
-}
-
-
-.fond_blanc
-{
-    display:inline-block;
-    height:60px;
-    background-color: white;
-    padding-right: 74px;
-    padding-top: 4px;
-}
-
-
-/*
-.fond_blanc
-{
-    background: white;
-    
-}
 */
-.nested2 .port
+
+
+.internalcontainerL h1
 {
-    width: 200px;
-    height: 150px;
-    margin-right: 20px;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.internalcontainerL p
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.internalcontainerL .nested1, .nested2, .nested3, .nested4, .nested5, .nested6
+{
+    margin-bottom: 30px;
+    padding: 15px;
+    width: 33.3%;
     
     
-    
-   
-   
     
 }
 
-.nested3 .mouettes
-{
-    width: 200px;
+
+.nested1 .cannebiere, .nested2 .port, .nested3 .mouettes, .nested4 .mer, .nested5 .panier, .nested6 .amina
+{   
+    width: 100%;
     height: 150px;
+    object-fit: cover;
     display: flex;
-    margin-right: 20px;
-    
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
   
-    
-    
 }
 
-.nested4 .mer
+
+.fond_blanc
 {
-    width: 200px;
-    height: 150px;
-    display: flex;
-    margin-top: 15px;
-    margin-right: 20px;
-    
-    
-    
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+    background-color: white;      
 }
 
-.nested5 .panier
+.cadre_nested
 {
-    width: 200px;
-    height: 150px;
-    display: flex;
-    margin-top: 15px;
-    margin-right: 20px;
-   
-   
-    
-    
+    border: white solid 5px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    box-shadow: lavender 2px 2px 2px 2px;
 }
 
-.nested6 .amina
-{
-    width: 200px;
-    height: 150px;
-    display: flex;
-    margin-top: 15px;
-    margin-right: 20px;
-  
-    
-    
-}
 
 .étoilesL
 {
-    line-height: 2em;
+   line-height: 2em;
 }
 
-.descriptionL
+.descriptions
 {
     line-height: 1.5em;
+    padding-top: 5px;
+    font-weight: bold;
 }
-/*
-.cadreL
-{
-    border: white solid 4px;
-    border-radius: 5%;
-}
-*/
 
+.bold
+{
+    font-weight: bold;
+}
 
 
 
 /*les plus populaires*/
 
-.nested1 .soleil
+.container2
 {
-    width: 160px;
-    height: 120px;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding-top: 10px;
+}
 
+
+
+.container2 .niche1 .soleil, .niche2 .coeur_eau, .niche3 .bleu_blanc
+{
+    width: 33%;
+    height: 145px;
+    object-fit: cover;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
     
 }
 
-/*pour aligner texte et image ci dessous*/
-
-.alignement_img_texte
+figure
 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
 
-.descriptionR
+figcaption
 {
-    text-align: left;
-    padding-right: 330px;
-    padding-top: 25px;
-
-}
-/*problème avec méthode ci-dessus car ce que j'ai mis s'applique au premier item mais pas au deuxième*/
-/*fin*/
-
-
-
-
-.nested2 .coeur_eau
-{
-    width: 160px;
-    height: 120px;
-    display: flex;
+    display: inline-block;
+    vertical-align: top;
 
 }
 
-
-
-.nested3 .bleu_blanc
+a
 {
-    width: 160px;
-    height: 120px;
-    display: flex;
-   
+    text-decoration: none;
+}
+
+p.étoilesR
+{
+    padding-top: 70px;
+    padding-bottom: 13px;
 }
 
 
-
-.descriptionL
+h3, p
 {
-    margin-top: 0px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+
+figure.niche1, .niche2, .niche3
+{
+    background: white;
+    border: white solid 4px;
+    border-radius: 10px;
+    box-shadow: lavender 2px 2px 2px 2px;
+    
+}
+
+figure.niche1
+{
+    margin-top: 25px;
+}
+
+.internalcontainerR h1
+{
+    font-size: 15px;
     
 }
 
 
 
-.étoilesL
-{
-    margin-bottom: 15px;
-}
-
-.étoilesR
-{
-    margin-bottom: 15px;
-    
-}
-
-
-.blue-stars > i
-{
-    size: 2px;
-    color: #0065FC;
-}
-
-.grey-star > i
-{
-    size: 2px;
-    color: #DEEBFF;
-}
-
-
-
-/*
-.descriptionR
-{
-    float: right;
-}
-*/
 
 
 
 
 /*---container grid ACTIVITES ci-dessous*/
 
+
+
 #holding_container_grid
 {
     width: 100%;
     box-sizing: border-box;
     margin: auto;
-    margin-bottom: 50px;
+    margin-top: 50px;
  
 
 } 
@@ -535,7 +506,6 @@ h2
     
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-column-gap: 1em;
     min-width: 100%;
     max-width: 100%;
    
@@ -548,68 +518,42 @@ h2
    padding-left: 1em;
    padding-right: 1em;
    padding-bottom: 3em;
-   
-
 
 }
 
-.wrapper_grid > div:nth-child(odd)
-{
-    background: white;
-}
 
-
-
-.port
+.port, .parc_calanques
 {
     
     width: 100%;
     height: 500px;
     object-fit: cover;
-   
-
-  
-      
+       
 }
 
-.fort
+
+.fort, .frioul, .de_la_garde, .photo-longchamp
 {
     width: 100%;
     height: 200px;
     object-fit: cover;
-   
     
 }
 
-.frioul
+
+
+.cadre3
 {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+    margin-top: 58px;
 }
 
-.parc_calanques
+
+.cadre6
 {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
+    margin-top: 58px;
 }
 
-.de_la_garde
-{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.photo-longchamp
-{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.description_fort
+.description_fort, .description_garde, .description_port, .description_iles, .description_calanques, .description_longchamp
 {
     
     font-weight: bold;
@@ -619,57 +563,9 @@ h2
   
 }
 
-.description_garde
-{
-    
-    font-weight: bold;
-    text-align: left;
-    padding-left: 15px;
-    line-height: 2em;
-    
-}
-
-.description_port
-{
-    font-weight: bold;
-    text-align: left;
-    padding-left: 15px;
-    line-height: 2em;
-    
-}
 
 
-
-.description_iles
-{
-    font-weight: bold;
-    text-align: left;
-    padding-left: 15px;
-    line-height: 2em;
-}
-
-
-
-.description_calanques
-{
-    font-weight: bold;
-    text-align: left;
-    padding-left: 15px;
-    line-height: 2em;
-    
-}
-
-
-.description_longchamp
-{
-
-    font-weight: bold;
-    text-align: left;
-    padding-left: 15px;
-    line-height: 2em;
-}
-
-.cadre
+.cadre1, .cadre2, .cadre3, .cadre4, .cadre5, .cadre6
 {
     border: white solid 2px;
     border-radius: 7%;
@@ -689,20 +585,14 @@ h2
 }
 
 
-
-
 /*--FOOTER--*/
 
 
-.footer
+#footer
 {
     display: flex;
     width: 100%;
     margin: auto;
-    /*box-sizing: border-box;
-    flex-direction: row;
-    justify-content: space-between; */
-
 }
 
 .inner_footer
@@ -712,6 +602,7 @@ h2
     box-sizing: border-box;
     flex-direction: row;
     justify-content: space-between; 
+    padding-top: 50px;
 }
 
 .inner_footer .tiers
@@ -719,6 +610,16 @@ h2
     display: block;
     padding: 15px;
     width: 33.3%;
+}
+
+.sous-catégorie
+{
+    line-height: 1.5em;
+}
+
+.tiers h1
+{
+    padding-bottom: 12px;
 }
 
 @media screen and (max-width: 600px) 
