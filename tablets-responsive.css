@@ -1,4 +1,4 @@
-@media all and (max-width: 767px)
+@media all and (max-width: 991px)
 { 
     #bloc_page
     {
@@ -31,7 +31,7 @@
     width: 100%;
 
 }
-@media (min-width: 481px) and (max-width: 767px)
+@media (min-width: 768px) and (max-width: 991px)
 
 {
    #menu-navigation
@@ -113,13 +113,13 @@ h2
     margin-left: 25px;
     padding-top: 10px;
 }
-@media (min-width: 481px) and (max-width: 767px)
+@media (min-width: 768px) and (max-width: 991px)
 {
 
     
     #search-location h2, .ville_ou_nature
     {
-       font-size: smaller;
+       font-size: medium;
        
     }
 
@@ -198,14 +198,14 @@ h2
     border-radius: 25px;
 }
 
-@media (min-width: 481px) and (max-width: 767px)
+@media (min-width: 768px) and (max-width: 991px)
 {
 
     
-     .filtres
+     div.filtres
     {
        flex-direction: column;
-       flex-wrap: nowrap;
+       flex-wrap: wrap;
        
     }
 
@@ -216,7 +216,7 @@ h2
     
      div.bordure-filtres
     {
-        
+        margin-top: 15px;
         max-width: 200px;
         max-height: 44px;
         margin-left: 15px;
@@ -235,7 +235,7 @@ h2
     padding-top: 15px;
 }
 
-@media (min-width: 481px) and (max-width: 767px)
+@media (min-width: 768px) and (max-width: 991px)
 {
 
     
@@ -346,13 +346,13 @@ h2
 
 }
 
-@media (min-width: 481px) and (max-width: 767px)
+@media (min-width: 768px) and (max-width: 991px)
 
 {
    .holdingcontainer
    {
        flex-direction: column;
-       max-width: 700px;
+       /*max-width: 700px;*/
        margin-left: 0;
             
            
@@ -372,12 +372,13 @@ h2
    
 }
 
-@media (min-width: 481px) and (max-width: 767px)
+@media (min-width: 768px) and (max-width: 991px)
 {
     
     div.internalcontainerL
     {
-        max-width: 100%;
+        /*max-width: 100%;*/
+        flex: 100%;
         margin-left: 0;
         margin-right: 0;
         padding: 20px;
@@ -397,13 +398,14 @@ h2
 }
 
 
-@media (min-width: 481px) and (max-width: 767px)
+@media (min-width: 768px) and (max-width: 991px)
 {
 
     
     .container1
     {
        width: 100%;
+      
        
        
     }
@@ -424,15 +426,17 @@ h2
    
 }
 
-@media (min-width: 481px) and (max-width: 767px)
+@media (min-width: 768px) and (max-width: 991px)
 {
     
     div.internalcontainerR
     {
-        min-width: 100%;
+        /*min-width: 100%;*/
         margin-left: 0;
         margin-right: 0;
-        margin-top: 50px;
+        margin-top: 15px;
+        padding: 20px;
+        flex: 100%;
     }
     
 
@@ -461,7 +465,7 @@ h2
       
 }
 
-@media (min-width: 481px) and (max-width: 767px)
+@media (min-width: 768px) and (max-width: 991px)
 {
     
     .internalcontainerL .nested1, .nested2, .nested3, .nested4, .nested5, .nested6
@@ -488,7 +492,8 @@ h2
 
 .fond_blanc
 {
-    height:60px;
+    width: 100%;
+    height: auto;
     padding-left: 10px;
     background-color: white;      
 }
@@ -534,6 +539,15 @@ h2
     padding-top: 10px;
 }
 
+@media (min-width:768px) and (max-width: 991px)
+{
+    div.container2
+    {
+       width: 100%;
+       padding-top: 400px;
+       
+    }
+}
 
 
 .container2 .niche1 .soleil, .niche2 .coeur_eau, .niche3 .bleu_blanc
@@ -545,6 +559,17 @@ h2
     border-top-left-radius: 7px;
     
 }
+
+@media (min-width:768px) and (max-width: 991px)
+{
+    figure.niche2, figure.niche3
+    {
+       margin-top: 150px;
+       
+    }
+}
+
+
 
 figure
 {
@@ -619,6 +644,7 @@ figure.niche1
 
 } 
 
+
 .wrapper_grid
 {
     
@@ -639,7 +665,7 @@ figure.niche1
 
 }
 
-@media (min-width: 481px) and (max-width: 767px) 
+@media (min-width: 768px) and (max-width: 991px) 
 {
     
     .wrapper_grid > div
@@ -657,6 +683,7 @@ figure.niche1
         min-width: 400px;
         max-width: 700px;
         min-height: auto;
+        
        
     }
 
@@ -753,7 +780,7 @@ figure.niche1
     padding-bottom: 12px;
 }
 
-@media (min-width: 481px) and (max-width: 767px)
+@media (min-width: 768px) and (max-width: 991px)
 {
     
     div.inner_footer
