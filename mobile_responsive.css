@@ -78,7 +78,7 @@ nav a:hover
 {
     nav a:hover
     {
-      border-top: 1.5 px solid transparent;
+      border-top: 1.5px solid transparent;
       border-bottom: 1.5px solid #0065FC;
       padding-bottom: 10px;
       font-weight: bold;
