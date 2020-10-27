@@ -1,4 +1,4 @@
-@media all and (max-width: 768px)
+@media all and (max-width: 767px)
 { 
     #bloc_page
     {
@@ -13,6 +13,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    /*padding: 0;*/
     border: 0;
     font-size: 100%;
     font-family: 'Raleway', sans-serif;
@@ -29,7 +30,19 @@
     justify-content: flex-end;
     width: 100%;
     
+}
 
+@media screen and (max-width: 767px) 
+{
+    #menu-navigation
+    {
+       width: 100%;
+       flex-direction: column;
+       flex-wrap: wrap;
+
+    }
+
+       
 }
 
 
@@ -42,36 +55,93 @@ nav
   
 }
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 767px) 
 {
     nav
     {
        width: 100%;
+       flex-direction: row;
+       flex-wrap: wrap;
+       margin-top: 0px;
     }
 
 }
+
 
 
 #heberg, #activ, #inscription
 {
   padding: 25px;
   font-family: 'Raleway-ExtraBold', sans-serif;
-  
+  color: black;
   
 }
+
+
+
+@media screen and (max-width: 767px) 
+{
+    div#heberg, div#activ/*, div#inscription*/
+    {
+        padding: 10px; 
+        /*border-bottom: white solid 1.5px;*/
+    }
+
+    div#inscription
+    {
+        display: none;
+    }
+
+    div#heberg
+    {
+        width: 50%;
+        padding-left: 50px;
+           
+    }
+
+    div#heberg a 
+    {
+        color: #0065FC;   
+    }
+    div#activ
+    {
+        width: 50%;
+        padding-left: 50px;
+    }
+    div#activ a 
+    {
+        color: grey;
+    }
+
+  
+ 
+}
+
+#inscription
+{
+    font-weight: bold;
+}
+
+#inscription a
+{
+    color: #0065FC;
+}
+
 
 nav a 
 {
   text-decoration: none;
-  color: #0065FC;
+  border-top: white solid 1.5px;
   
 }
+
 
 nav a:hover
 {
   border-top: 1.5px solid #0065FC;
   padding-top:45px;
-  font-weight: bold;
+  color: #0065FC;
+  
 }
 
 
@@ -80,35 +150,85 @@ nav a:hover
 
 #logo
 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     position: relative;
+    width: 100%;
     padding-top: 5px;
     padding-left: 25px;
 
 }
 
-
-#search-location
+#logo p
 {
-    padding-top: 35px;
-
+    color: #0065FC;
+    font-weight: bold;
+    margin-top: 50px;
+    padding-right: 20px;
+    display: none;
+    
 }
+
+
+
+@media screen and (max-width:767px)
+{
+   div#logo
+   {
+       height: 100px;
+       padding-left: 10px;
+       
+   }
+   
+   div#logo p 
+   {
+       display: block;
+       
+   }
+     
+}
+
+
+
+#logo img
+{
+    display: block;
+    padding-top: 35px;
+}
+
 
 
 /*---introduction---*/
 
-h2
-{
-    padding-left: 25px;
-}
 
-@media screen and (max-width: 768px) 
+
+@media screen and (max-width: 767px) 
 {
-    #search-location h2 .ville_ou_nature
+    #search-location h1 .ville_ou_nature
     {
        display: flex;
        flex-direction: row;
        flex-wrap: wrap;
        
+       
+    }
+
+}
+
+
+
+@media screen and (max-width: 767px) 
+{
+    #search-location h1 
+    {
+    
+       margin-left: 10px;
+       
+    }
+    div.ville_ou_nature
+    {
+        margin-left: 10px;
     }
 
 }
@@ -120,7 +240,7 @@ h2
     padding-left: 25px;
 }
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     div.nmbre_log_dispo
     {
@@ -145,7 +265,10 @@ h2
 #barre_recherche
 {
     padding-left: 25px;
+    
+    
 }
+
 
 
 
@@ -172,7 +295,7 @@ h2
     padding-left: 12px;
     padding-right: 13px;
     background-color: #0065FC;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'raleway', sans-serif;
     font-size: 1.0em;
     color: white;
     border-style: none;
@@ -181,13 +304,14 @@ h2
 
 }
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 767px) 
 {
     div#barre_recherche
     {
        
-       min-width: 392px;
-       min-height: 59px;
+       min-width: 100%;
+       min-height: auto;
+       padding-left: 2px;
     }
 
 }
@@ -203,18 +327,20 @@ h2
     
 }
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 767px) 
 {
     div.filtres
     {
+    
        flex-direction: column;
        flex-wrap: wrap;
-       
-    }
+    
+    }    
+    
     div.bordure-filtres
     {
-       min-width: 204px;
-       min-height: 44px;
+       width: 300px;
+       min-height: auto;
     }
     .filtres p
     {
@@ -248,7 +374,7 @@ h2
     border-radius: 25px;
 }
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 767px) 
 {
     
     div.bordure-filtres
@@ -279,18 +405,43 @@ h2
 /*---icones économique/familial/romantique/animaux autorisés/info---*/
 
 
-.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
+.fa-heart, .fa-dog
 {
     color: #0065FC;
     background: #DEEBFF;
-    padding:13px;
+    padding:12px;
     margin-right: 10px;
     border-radius: 50%;
-
-    
 }
 
-@media screen and (max-width: 768px) 
+.fa-child
+{
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    /*padding:12px;*/
+    color: #0065FC;
+    background: #DEEBFF;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.fa-money-bill-wave
+{
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    /*padding:12px;*/
+    color: #0065FC;
+    background: #DEEBFF;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 767px) 
 {
     
     .fa-child
@@ -329,6 +480,9 @@ h2
     background: #0065FC;
     color: white;
 }
+
+
+
 
 
 .fa-info-circle
@@ -370,7 +524,7 @@ h2
 }
 
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 767px) 
 {
     div.holdingcontainer
     {
@@ -390,11 +544,12 @@ h2
        
 }
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 767px) 
 {
     .internalcontainerL
     {
         margin: 0;
+        /*width: 100%;*/
     }
 }
 
@@ -409,7 +564,7 @@ h2
     padding-top: 15px;
 }
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 767px) 
 {
     div.container1
     {
@@ -440,7 +595,7 @@ h2
    
 }
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 767px) 
 {
     .internalcontainerR
     {
@@ -506,7 +661,7 @@ h2
 }
 
 
-.étoilesL
+.etoilesL
 {
    line-height: 2em;
 }
@@ -523,6 +678,11 @@ h2
     font-weight: bold;
 }
 
+.internalcontainerL h2
+{
+    margin-left: 15px;
+
+}    
 
 
 /*les plus populaires*/
@@ -562,9 +722,23 @@ figcaption
 
 }
 
+
 a
 {
     text-decoration: none;
+}
+
+h2
+{
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+}
+
+h2 i 
+{
+    font-size: 18px;
 }
 
 p.étoilesR
@@ -600,6 +774,12 @@ figure.niche1
     font-size: 15px;
     
 }
+
+
+
+
+
+
 
 /*---container grid ACTIVITES ci-dessous*/
 
@@ -687,7 +867,12 @@ figure.niche1
     box-shadow: lavender  5px 5px;
 }
 
-@media screen and (max-width: 768px) 
+#holding_container_grid h2
+{
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 767px) 
 {
     
     .wrapper_grid > div
@@ -709,6 +894,7 @@ figure.niche1
     }
 
 }
+
 
 
 /*--FOOTER--*/
@@ -738,7 +924,7 @@ figure.niche1
     width: 33.3%;
 }
 
-.sous-catégorie
+.sous-categorie
 {
     line-height: 1.5em;
 }
@@ -748,7 +934,7 @@ figure.niche1
     padding-bottom: 12px;
 }
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 767px) 
 {
    div.inner_footer
    {
@@ -761,6 +947,3 @@ figure.niche1
    }
    
 }
-
-
-
