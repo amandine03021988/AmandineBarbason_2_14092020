@@ -13,7 +13,6 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    /*padding: 0;*/
     border: 0;
     font-size: 100%;
     font-family: 'Raleway', sans-serif;
@@ -55,15 +54,24 @@ nav
 {
   padding: 25px;
   font-family: 'Raleway-ExtraBold', sans-serif;
-  
-  
+  color: black;
 }
 
+
+#inscription
+{
+    font-weight: bold;
+}
+
+#inscription a
+{
+    color: #0065FC;
+}
 
 nav a 
 {
   text-decoration: none;
-  color: #0065FC;
+  border-top: white solid 1.5px;
   
 }
 
@@ -71,7 +79,8 @@ nav a:hover
 {
   border-top: 1.5px solid #0065FC;
   padding-top:45px;
-  font-weight: bold;
+  color: #0065FC;
+ 
 }
 
 
@@ -81,26 +90,37 @@ nav a:hover
 
 #logo
 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     position: relative;
+    width: 100%;
     padding-top: 5px;
     padding-left: 25px;
 
 }
 
-
-#search-location
+#logo p
 {
-    padding-top: 35px;
-
+    color: #0065FC;
+    font-weight: bold;
+    margin-top: 50px;
+    padding-right: 20px;
+    display: none;
 }
+
+#logo img
+{
+    display: block;
+    padding-top: 35px;
+}
+
+
+
 
 
 /*---introduction---*/
 
-h2
-{
-    padding-left: 25px;
-}
 
 .nmbre_log_dispo
 {
@@ -113,6 +133,8 @@ h2
     margin-left: 25px;
     padding-top: 10px;
 }
+
+
 @media (min-width: 768px) and (max-width: 991px)
 {
 
@@ -124,11 +146,13 @@ h2
     }
 
 }
+
 /*---barre recherche---*/
 
 #barre_recherche
 {
     padding-left: 25px;
+   
 }
 
 
@@ -156,7 +180,7 @@ h2
     padding-left: 12px;
     padding-right: 13px;
     background-color: #0065FC;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'raleway', sans-serif;
     font-size: 1.0em;
     color: white;
     border-style: none;
@@ -217,8 +241,8 @@ h2
      div.bordure-filtres
     {
         margin-top: 15px;
-        max-width: 200px;
-        max-height: 44px;
+        width: 250px;
+        min-height: auto;
         margin-left: 15px;
     }
     
@@ -262,16 +286,39 @@ h2
 /*---icones économique/familial/romantique/animaux autorisés/info---*/
 
 
-.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
+.fa-heart, .fa-dog
 {
     color: #0065FC;
     background: #DEEBFF;
-    padding:10px;
+    padding:12px;
     margin-right: 10px;
     border-radius: 50%;
-
-    
 }
+
+.fa-child
+{
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    color: #0065FC;
+    background: #DEEBFF;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.fa-money-bill-wave
+{
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    color: #0065FC;
+    background: #DEEBFF;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
 
 .fa-money-bill-wave:hover
 {
@@ -296,6 +343,7 @@ h2
     background: #0065FC;
     color: white;
 }
+
 
 
 .fa-info-circle
@@ -499,7 +547,7 @@ h2
 }
 
 
-.étoilesL
+.etoilesL
 {
    line-height: 2em;
 }
@@ -516,6 +564,11 @@ h2
     font-weight: bold;
 }
 
+.internalcontainerL h2
+{
+    margin-left: 15px;
+
+}    
 
 
 /*les plus populaires*/
@@ -580,6 +633,19 @@ a
     text-decoration: none;
 }
 
+h2
+{
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+}
+
+h2 i 
+{
+    font-size: 18px;
+}
+
 p.étoilesR
 {
     padding-top: 70px;
@@ -613,6 +679,11 @@ figure.niche1
     font-size: 15px;
     
 }
+
+
+
+
+
 
 
 /*---container grid ACTIVITES ci-dessous*/
@@ -724,8 +795,10 @@ figure.niche1
     box-shadow: lavender  5px 5px;
 }
 
-
-
+#holding_container_grid h2
+{
+    margin-left: 20px;
+}
 
 /*--FOOTER--*/
 
@@ -754,7 +827,7 @@ figure.niche1
     width: 33.3%;
 }
 
-.sous-catégorie
+.sous-categorie
 {
     line-height: 1.5em;
 }
